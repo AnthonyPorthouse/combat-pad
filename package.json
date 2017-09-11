@@ -1,0 +1,53 @@
+{
+  "name": "combat-pad",
+  "version": "1.0.0",
+  "description": "Combat Tracking for the Masses",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/AnthonyPorthouse/combat-pad",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Anthony Porthouse",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-devtools-installer": "^2.2.0",
+    "electron-prebuilt-compile": "1.7.5",
+    "vue-devtools": "^3.1.9"
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.1",
+    "vue": "^2.4.2"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip",
+          "dmg"
+        ],
+        "linux": [
+          "deb",
+          "rpm",
+          "flatpak"
+        ]
+      },
+      "electronPackagerConfig": {},
+      "electronWinstallerConfig": {},
+      "electronInstallerDMG": {},
+      "electronInstallerFlatpak": {},
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {}
+    }
+  }
+}

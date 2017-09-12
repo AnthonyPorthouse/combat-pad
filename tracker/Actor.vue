@@ -14,16 +14,18 @@
             },
         },
 
-        data: () => {
-            return {
-                name: '',
-                initiative: 0,
+        computed: {
+            id() {
+                return this.actor.name;
+            },
+
+            name() {
+                return this.actor.name;
+            },
+
+            initiative() {
+                return this.actor.initiative;
             }
         },
-
-        beforeMount() {
-            this.name = this.actor.name || '';
-            this.initiative = this.actor.initiative || 0;
-        }
     }
 </script>

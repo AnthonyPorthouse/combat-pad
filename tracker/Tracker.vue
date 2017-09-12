@@ -5,7 +5,7 @@
         <new-actor-bar @addActor="addActor"></new-actor-bar>
 
         <div class="actors">
-            <actor v-for="actor in actors" :actor="actor"></actor>
+            <actor v-for="actor in actors" :key="actor.id" :actor="actor"></actor>
         </div>
 
     </div>
